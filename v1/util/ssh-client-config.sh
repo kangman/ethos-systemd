@@ -38,5 +38,5 @@ Host ${IP}
 
 Host ${HOSTS}
   IdentityFile ~/.ssh/ssh.pem
-  ProxyCommand ssh ${IP} ncat %h %p
+  ProxyCommand ssh ${IP} -W %h:%p
 EOF
